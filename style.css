@@ -325,6 +325,15 @@ footer {
 
 }
 
+.container-proyecto h4{
+  font-size:1.3rem ;
+    color: #3a506b;
+}
+
+.container-proyecto-claro h4{
+  font-size:1.3rem ;
+    color: #3a506b;
+}
 
 .container-proyecto-claro{
  
@@ -351,4 +360,47 @@ footer {
   max-height: 1600px;
   border:solid #F5F5F5;
   border-radius: 20px;
+}
+
+
+.descripcion-especificaciones{
+  padding: 0px 20px;
+  display: flex;
+  margin: 10px;
+}
+
+.descripcion-especificaciones div p{
+text-align: center;
+
+}
+
+.descripcion-especificaciones div{
+
+  background-color: #F5F5F5;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+
+}
+
+#futuro-tarot h4{
+  font-size: 0.90 rem;
+  text-align: center;
+}
+
+.cajas-futuro{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0px 20px;
+
+}
+
+.cajas-futuro div{
+  padding: 15px;
+  margin: 10px;
+  border: solid #f0d4dd;
+  border-radius: 20px;
+   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+
 }

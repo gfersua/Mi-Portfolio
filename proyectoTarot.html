@@ -15,9 +15,9 @@
             <a href="index.html" class="logo">MGFS</a>
             <ul class="nav-links">
                 <li><a href="#introduccion-tarot">Introduccion</a></li>
-                <li><a href="">Especificaciones</a></li>
-                <li><a href="">Futuro</a></li>
-                <li><a href="">Repositorio</a></li>
+                <li><a href="#especificaciones-tarot">Especificaciones</a></li>
+                <li><a href="#futuro-tarot">Futuro</a></li>
+                <li><a href="#repositorio-tarot">Repositorio</a></li>
                 <li><a href="" aria-label="Ver en inglés"><img src="img/bandera-uk.png" alt="Inglés" class="bandera"></a></li>
             </ul>
             <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
@@ -63,9 +63,9 @@
             </div>
         </section>
 
-
+        <h3>Imágenes del proyecto</h3>
         <section id="imagenes-tarot" class="container-proyecto-claro">
-            <h3>Imágenes del proyecto</h3>
+            
 
             <div class="grid">
                    
@@ -79,10 +79,53 @@
         </section>
 
         <!--Especificaciones-->
-
+        <h3>Especificaciones</h3>
         <section id="especificaciones-tarot" class="container-proyecto">
-            <h3>Especificaciones</h3>
+            
+            <h4>¿Qué he usado?</h4>
+                <div class="grid">
+                    
+                    <div class="card"> <strong>HTML</strong></div>
+                    <div class="card"><strong>CSS</strong></div>
+                    <div class="card"><strong>JavaScript</strong></div>
+                    <div class="card"><strong>Canva</strong></div>
+                    <div class="card"><strong>Pinterest</strong></div> 
+                </div>
 
+            <h4>Especificaciones principales: </h4>
+            <div class="descripcion-especificaciones">
+
+            <div>
+            <p><strong>Añadir lectura (en desarrollo)</strong><p>
+            <ul>
+                <li>El usuario puede seleccionar cartas de un menú dinámico generado con JavaScript</li>
+                <li>Se incluye un calendario para elegir la fecha de la lectura.</li>
+                <li>El formulario permite introducir un texto descriptivo de la lectura.</li>
+                <li>Objetivo: almacenar conjuntamente texto, fecha y cartas seleccionadas para futuras consultas.</li>
+            </ul>
+            </div>
+
+            <div>
+            <p><strong>Ver Diario (en desarrollo)</strong><p>
+            <ul>
+                <li>Sección destinada a mostrar las entradas previamente añadidas.</li>
+                <li>Objetivo: recuperar y listar las lecturas guardadas, organizadas por fecha.</li>
+                <li>Próximas mejoras: filtros de búsqueda y posibilidad de editar/eliminar entradas.</li>
+                
+            </ul>
+            </div>
+
+            <div>
+            <p><strong>Carta del día (en desarrollo)</strong><p></p>
+
+            <ul>
+                <li>El usuario puede pulsar un botón para que aparezca una carta seleccionada al azar.</li>
+                <li>Las cartas se gestionan mediante un array en JavaScript.</li>
+                <li>Funcionalidad pensada como recurso rápido para obtener una tirada simple.</li>
+                
+            </ul>
+            </div>
+            </div>
         </section>
 
         <!--Desarrollo a futuro-->
@@ -90,11 +133,41 @@
         <section id="futuro-tarot" class="container-proyecto-claro">
             <h3>Planes de futuro</h3>
 
+            <h4><em>Este proyecto está todavía en desarrollo, lo que me permite seguir explorando nuevas herramientas y plantear mejoras que integren diferentes lenguajes y enfoques.</em></h4>
+        
+            <div class="cajas-futuro">
+
+            <div>
+            <h4>Persistencia de datos</h4>
+            <p>Integrar almacenamiento en base de datos o mediante una API REST en Java, para que las entradas no se pierdan al cerrar la aplicación.</p>
+            </div>
+
+            <div>
+            <h4>Gestión del diario</h4>
+             <p>Añadir funcionalidades de edición y eliminación de entradas, así como filtros por fecha o carta. <br><br>
+               En cuanto a los filtros, mi idea es implementar un endpoint que devuelva las cartas mediante peticiones GET una vez integrada la persistencia de datos, y posteriormente aplicar un filtrado dinámico en el cliente utilizando JavaScript
+            </p>
+            </div>
+
+            <div>
+            <h4>Diseño responsive</h4>
+            <p>Adaptar la interfaz para que se use cómodamente en dispositivos móviles y tablets utilizando media queries.</p>
+            </div>
+
+            <div>
+                <h4>Versión móvil</h4>
+                <p>Explorar el desarrollo de una Progressive Web App (PWA) o aplicación Android sencilla que consuma los datos desde la API.</p>
+
+            </div>
+            </div>
+
+            </div>
+        
         </section>
 
         <!--Repositorio-->
 
-        <section id="repositorio-tarot" class="container-proyecto-claro">
+        <section id="repositorio-tarot" class="container-proyecto">
             <h3>Acceso al repositorio de Github</h3>
 
         </section>
