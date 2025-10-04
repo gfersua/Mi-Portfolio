@@ -296,6 +296,24 @@ footer {
 
 }
 
+
+.container-introduccion-tarot{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  
+}
+
+
+.container-introduccion-tarot div{
+  font-size: 1.05rem;
+  max-width: 700px;
+  text-align: justify;
+  margin: 0px 150px 0px 0px;
+}
+
 .container-proyecto{
 
 
@@ -317,6 +335,8 @@ footer {
   border-radius:20px ;
 
 }
+
+
 
 .card-proyecto{
 
