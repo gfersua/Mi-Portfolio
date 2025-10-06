@@ -219,7 +219,8 @@ h3{
 /*  Contacto */
 
 .contacto-contenedor{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     align-items: center;
     justify-content: center;
     background-color: #f0d4dd;
@@ -236,13 +237,7 @@ h3{
 
 }
 
-.separacion{
 
-   
-    max-height: 15px;
-    border:solid #6e679e;
-
-}
 
 .icono{
 
@@ -298,7 +293,8 @@ footer {
 
 
 .container-introduccion-tarot{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -356,8 +352,9 @@ footer {
 }
 
 .foto-proyecto{
-  max-width: 800px;
-  max-height: 1600px;
+  
+  max-width: 100%;
+  height: auto;
   border:solid #F5F5F5;
   border-radius: 20px;
 }
@@ -365,12 +362,13 @@ footer {
 
 .descripcion-especificaciones{
   padding: 0px 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin: 10px;
 }
 
 .descripcion-especificaciones div p{
-text-align: center;
+  text-align: center;
 
 }
 
