@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio · Mª de Gracia Fernández Suárez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="nav">
+            <a href="#inicio" class="logo">MGFS</a>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="indexEnglish.html" aria-label="Ver en inglés"><img src="img/bandera-uk.png" alt="Inglés" class="bandera"></a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============================================================
+             PORTADA — HERO TÉCNICO
+             ============================================================ -->
+        <section id="inicio" class="hero">
+
+            <!-- Fondo: grid + líneas + blobs -->
+            <div class="hero-grid"></div>
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+            <div class="hero-lines">
+                <svg viewBox="0 0 1200 620" preserveAspectRatio="none" width="100%" height="100%">
+                    <line x1="0"    y1="620" x2="380"  y2="200" stroke="rgba(200,169,110,0.07)" stroke-width="1"/>
+                    <line x1="1200" y1="0"   x2="820"  y2="420" stroke="rgba(200,169,110,0.05)" stroke-width="1"/>
+                    <line x1="0"    y1="0"   x2="200"  y2="620" stroke="rgba(100,150,220,0.05)" stroke-width="0.8"/>
+                    <line x1="1200" y1="620" x2="900"  y2="0"   stroke="rgba(100,150,220,0.04)" stroke-width="0.8"/>
+                </svg>
+            </div>
+
+            <!-- Código flotante izquierda -->
+            <pre class="hero-code hero-code-left">public class Developer {
+  private String name =
+    "Mª de Gracia";
+  private String role =
+    "DAM Developer";
+
+  public String[] skills() {
+    return new String[]{
+      "Java", "SQL",
+      "HTML", "CSS", "JS"
+    };
+  }
+
+  public boolean isAvailable() {
+    return true;
+  }
+}</pre>
+
+            <!-- Código flotante derecha -->
+            <pre class="hero-code hero-code-right">SELECT *
+FROM candidatos
+WHERE perfil = 'DAM'
+  AND actitud = 'proactiva'
+  AND aprendizaje = 'continuo';
+
+-- Resultado: 1 fila
+-- nombre: M.G. Fernández S.
+-- estado: disponible ✓</pre>
+
+            <!-- Esquinas decorativas -->
+            <span class="corner corner-tl"></span>
+            <span class="corner corner-tr"></span>
+            <span class="corner corner-bl"></span>
+            <span class="corner corner-br"></span>
+
+            <!-- Línea dorada superior -->
+            <div class="hero-accent-top"></div>
+
+            <!-- Contenido central -->
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    open to work &nbsp;·&nbsp; Sevilla, ES
+                </div>
+
+                <div class="hero-tag">
+                    <span class="hero-tag-line"></span>
+                    Portfolio
+                    <span class="hero-tag-line"></span>
+                </div>
+
+                <div class="hero-avatar">
+                    <div class="hero-initials">MG</div>
+                 
+                </div>
+
+                <h1 class="hero-name">María de Gracia<br>Fernández Suárez</h1>
+                <p class="hero-subtitle">Desarrollo de Aplicaciones Multiplataforma</p>
+
+                <div class="hero-sep"></div>
+
+                <div class="hero-btns">
+                    <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+                    <a href="#contacto" class="btn-outline">Contacto</a>
+                </div>
+
+            </div>
+
+            <!-- Scroll hint -->
+            <div class="scroll-hint">
+                <span class="scroll-label">scroll</span>
+                <span class="scroll-arrow"></span>
+            </div>
+
+        </section>
+
+        <!-- ============================================================
+             SOBRE MÍ
+             ============================================================ -->
+        <section id="sobre-mi" class="seccion">
+            <h3>Sobre mí</h3>
+            <div class="sobremi-contenedor">
+                <img src="img/perfil.png" alt="Fotografía de perfil" class="foto-perfil">
+                <p>
+                    Me llamo Mª de Gracia y cuento con seis años de experiencia como enfermera, cuatro de ellos especializada en salud mental. Durante este tiempo he desarrollado habilidades como la organización, la gestión del tiempo y la capacidad de análisis en entornos exigentes, siempre manteniendo un enfoque humano y resolutivo.
+                    <br><br>
+                    Actualmente he emprendido un cambio de orientación profesional hacia el desarrollo de software, con el objetivo de crecer en un ámbito que me permita combinar el pensamiento lógico con la creatividad.
+                    <br><br>
+                    Me ilusiona afrontar este nuevo camino con la misma dedicación con la que he trabajado en mi carrera anterior, y con la convicción de que la tecnología puede ser una herramienta transformadora.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SKILLS
+             ============================================================ -->
+        <section id="skills" class="seccion-clara">
+            <div class="seccion">
+                <h3>Skills</h3>
+                <div class="skills-contenedor">
+
+                    <div class="secciones-skills">
+                        <h4>Lenguajes de programación</h4>
+                        <div class="grid">
+                            <div class="card"><strong>Java</strong><br>Nivel: Básico · Intermedio</div>
+                            <div class="card"><strong>SQL</strong><br>Nivel: Básico · Intermedio</div>
+                            <div class="card"><strong>HTML / CSS / JS</strong><br>Nivel: Básico</div>
+                        </div>
+                    </div>
+
+                    <div class="secciones-skills">
+                        <h4>Herramientas</h4>
+                        <div class="grid">
+                            <div class="card">Git</div>
+                            <div class="card">Github</div>
+                            <div class="card">Canva</div>
+                        </div>
+                    </div>
+
+                    <div class="secciones-skills">
+                        <h4>Idiomas</h4>
+                        <div class="grid">
+                            <div class="card"><strong>Castellano</strong><br>Nativo</div>
+                            <div class="card"><strong>Inglés</strong><br>B2 · Cambridge FCE</div>
+                        </div>
+                    </div>
+
+                    <div class="secciones-skills">
+                        <h4>Soft-skills</h4>
+                        <div class="grid">
+                            <div class="card">Comunicación efectiva</div>
+                            <div class="card">Gestión del tiempo</div>
+                            <div class="card">Trabajo en equipo multidisciplinar</div>
+                            <div class="card">Análisis en entornos complejos</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             PROYECTOS
+             ============================================================ -->
+        <section id="proyectos" class="seccion">
+            <h3>Proyectos</h3>
+            <div class="grid proyectos-grid">
+                
+                <a href="autotrack.html" class="proyecto-card">
+                    <div class="proyecto-tag">Java · Hibernate · JPA · JPQL</div>
+                    <h4>AutoTrack</h4>
+                    <p>Herramienta para autónomos para controlar facturas, cobros e ingresos en un solo lugar.</p>
+                    <span class="proyecto-link">Ver proyecto →</span>
+                </a>
+                <a href="proyectoTarot.html" class="proyecto-card">
+                    <div class="proyecto-tag">HTML · CSS · JavaScript</div>
+                    <h4>Diario de Tarot</h4>
+                    <p>Aplicación web de ocio para registrar lecturas de tarot y reflexiones en un diario digital.</p>
+                    <span class="proyecto-link">Ver proyecto →</span>
+                </a>
+                <a href="https://github.com/gfersua/Mi-Portfolio" target="_blank" class="proyecto-card">
+                    <div class="proyecto-tag">HTML · CSS · JavaScript</div>
+                    <h4>Portfolio</h4>
+                    <p>Código fuente de este portfolio en GitHub.</p>
+                    <span class="proyecto-link">Ver repositorio →</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             CONTACTO
+             ============================================================ -->
+        <section id="contacto" class="seccion-contacto">
+            <div class="seccion">
+                <h3>Contacto</h3>
+                <div class="contacto-contenedor">
+                    <div>
+                        <h4>Email</h4>
+                        <p>gracia.fernandez.suarez@gmail.com</p>
+                    </div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BUV3Dxjh2RGKd611EUuWpnQ%3D%3D" target="_blank">
+                            <img src="img/linkedin-icon.png" alt="LinkedIn" class="icono">
+                        </a>
+                    </div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/gfersua" target="_blank">
+                            <img src="img/github-icon.png" alt="GitHub" class="icono">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 · Portfolio de Gracia · Hecho con código y dedicación</p>
+    </footer>
+
+    <script>
+        // Menú móvil
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('open'));
+        });
+
+        // Highlight del nav al hacer scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                if (window.scrollY >= section.offsetTop - 100) current = section.getAttribute('id');
+            });
+            navItems.forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+            });
+        });
+    </script>
+
+</body>
+</html>

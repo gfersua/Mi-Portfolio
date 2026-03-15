@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTrack · MGFS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-proyecto.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN GLOBAL -->
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="logo">MGFS</a>
+            <ul class="nav-links">
+                <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#proyectos">Proyectos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="#" aria-label="Ver en inglés"><img src="img/bandera-uk.png" alt="Inglés" class="bandera"></a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============================================================
+             HERO DEL PROYECTO
+             ============================================================ -->
+        <section class="proyecto-hero">
+            <div class="proyecto-hero-grid"></div>
+            <div class="proyecto-hero-blob"></div>
+
+            <div class="proyecto-hero-content">
+
+                <a href="index.html#proyectos" class="volver">Volver a proyectos</a>
+
+                <!-- Estado: cambia el texto y el color del punto -->
+                <div class="proyecto-estado">
+                    <span class="estado-dot"></span>
+                    En desarrollo <!-- opciones: En producción · En desarrollo · Pausado -->
+                </div>
+
+                <!-- ↓ EDITA: nombre y tipo del proyecto -->
+                <h1>AutoTrack</h1>
+                <p>AppWeb · Herramienta para autónomos</p>
+
+                <!-- ↓ EDITA: añade o elimina badges según tecnologías -->
+                <div class="tech-badges">
+                    <span class="badge">Java</span>
+                    <span class="badge">HIBERNATE</span>
+                    <span class="badge">JPA</span>
+                    <span class="badge">JPQL</span>
+                
+                    <!-- <span class="badge">Spring Boot</span> -->
+                </div>
+
+                <div class="proyecto-hero-btns">
+                    <a href="#capturas" class="btn-primary">Ver capturas</a>
+                    <a href="#repositorio" class="btn-outline">Repositorio GitHub</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ÍNDICE DE NAVEGACIÓN INTERNO -->
+        <nav class="proyecto-nav" aria-label="Secciones del proyecto">
+            <div class="proyecto-nav-inner">
+                <a href="#descripcion" class="active">Descripción</a>
+                <a href="#aprendizaje">Aprendizaje</a>
+                <a href="#capturas">Capturas</a>
+                <a href="#futuro">Planes de futuro</a>
+                <a href="#repositorio">Repositorio</a>
+            </div>
+        </nav>
+
+
+        <!-- ============================================================
+             DESCRIPCIÓN
+             ============================================================ -->
+        <section id="descripcion">
+            <div class="proyecto-seccion">
+                <h2>Sobre el proyecto</h2>
+
+                <div class="descripcion-grid">
+
+                    <!-- ↓ EDITA: descripción larga -->
+                    <div class="descripcion-texto">
+                        <p>
+                             AutoTrack es una herramienta para autónomos que resuelve algo muy concreto: saber cuánto tardas en cobrar una factura, cuánto has ganado este trimestre y cuál es tu tarifa media por empresa.
+
+                        </p>
+                        <p>El diseño gira en torno a tres ideas claras: que el autónomo sepa lo que gana sin calculos manuales, que ninguna factura se pierda por el camino y que pueda decidir con quien trabaja basándose en datos reales.</p>
+                    </div>
+
+                    <!-- ↓ EDITA: datos rápidos del proyecto -->
+                    <div class="descripcion-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Tipo</span>
+                            <span class="meta-valor">Aplicación web</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Año</span>
+                            <span class="meta-valor">2026</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Estado</span>
+                            <span class="meta-valor">En desarrollo</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Stack principal</span>
+                            <span class="meta-valor">Java · Hibernate · JPA · JPQL</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             LO QUE HE APRENDIDO
+             ============================================================ -->
+        <div class="proyecto-seccion-alt">
+            <section id="aprendizaje" class="proyecto-seccion">
+                <h2>¿Qué he aprendido?</h2>
+
+                <!-- ↓ EDITA: añade o elimina <li> según tus aprendizajes -->
+              <ul class="aprendizaje-lista">
+                <li>Modelado de entidades JPA con relaciones 1:N y mapeo entre convenciones Java y MySQL</li>
+                <li>Escritura de consultas JPQL con parámetros nombrados, navegación de relaciones y funciones de agregación como AVG</li>
+                <li>Separación de responsabilidades en arquitectura en capas: model, repository, service y util</li>
+                <li>Cálculos financieros con BigDecimal para garantizar precisión en importes, IVA e IRPF</li>
+                <li>Gestión de conexión con base de datos mediante patrón Singleton en HibernateUtil</li>
+                <li>Protección de credenciales con variables de entorno y .gitignore antes de publicar en GitHub</li>
+            </ul>
+
+            </section>
+        </div>
+
+
+        <!-- ============================================================
+             CAPTURAS DE PANTALLA
+             ============================================================ -->
+        <section id="capturas">
+            <div class="proyecto-seccion">
+                <h2>Capturas de pantalla</h2>
+
+                <!-- ↓ EDITA: cambia src y alt de cada imagen.
+                     Añade más .captura-item si tienes más capturas.
+                     Elimina los que no necesites.                    -->
+                <div class="capturas-grid">
+
+                    <div class="captura-item">
+                        <img src="img-autotrack/index.png" alt="Descripción de la captura 1">
+                        <div class="captura-caption">Vista principal · AutoTrack</div>
+                    </div>
+
+                    <div class="captura-item">
+                        <img src="img-autotrack/funcionalidadd1.jpg" alt="Descripción de la captura 2">
+                        <div class="captura-caption">Funcionalidad cálculo neto/bruto · Actualización estado facturas</div>
+                    </div>
+
+                    <div class="captura-item">
+                        <img src="img-autotrack/funcionalidad2.jpg" alt="Descripción de la captura 3">
+                        <div class="captura-caption">Funcionalidad cálculo jornada</div>
+                    </div>
+
+                    <!-- Bloque extra: descomenta si tienes más capturas
+                    <div class="captura-item">
+                        <img src="img/captura-4.png" alt="Descripción de la captura 4">
+                        <div class="captura-caption">Vista móvil · responsive</div>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             PLANES DE FUTURO
+             ============================================================ -->
+        <div class="proyecto-seccion-alt">
+            <section id="futuro" class="proyecto-seccion">
+                <h2>Planes de futuro</h2>
+
+                <!-- ↓ EDITA: añade o elimina tarjetas según tus ideas -->
+                <div class="futuro-grid">
+
+                    <div class="futuro-card">
+                        <h3>Migración a SpringBoot</h3>
+                        <p>Refactorización del backend a Spring Boot con Spring Data JPA y exposición de una API REST documentada con Swagger.</p>
+                    </div>
+
+                    <div class="futuro-card">
+                        <h3>Realización de pruebas JUnit 5</h3>
+                        <p>Cobertura de tests unitarios sobre los servicios de cálculo: demora de factura, importes netos y brutos, y totales trimestrales.</p>
+                    </div>
+
+                    <div class="futuro-card">
+                        <h3>Frontend</h3>
+                        <p>Prototipo diseñado en Figma. Pendiente de implementación en HTML/CSS y posterior integración con la API REST.</p>
+                    </div>
+
+                
+
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ============================================================
+             REPOSITORIO / CTA FINAL
+             ============================================================ -->
+        <section id="repositorio" class="repo-seccion">
+            <h2>Accede al código fuente</h2>
+            <p>Repositorio disponible en GitHub</p>
+            <div class="repo-btns">
+                <!-- ↓ EDITA: cambia la URL del repositorio -->
+                <a href="https://github.com/gfersua/autotrack.git" target="_blank" class="btn-primary">
+                    Ver en GitHub
+                </a>
+                <!-- Si tienes demo en vivo, descomenta esto:
+                <a href="https://tu-demo.com" target="_blank" class="btn-outline">
+                    Ver demo en vivo
+                </a>
+                -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 · Portfolio de Gracia · Hecho con código y dedicación</p>
+    </footer>
+
+    <script>
+        // Menú móvil
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+        // Highlight del índice interno al hacer scroll
+        const secciones = document.querySelectorAll('section[id], div[id]');
+        const navItems  = document.querySelectorAll('.proyecto-nav a');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navItems.forEach(a => a.classList.remove('active'));
+                    const active = document.querySelector(`.proyecto-nav a[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+
+        secciones.forEach(s => observer.observe(s));
+    </script>
+
+</body>
+</html>
