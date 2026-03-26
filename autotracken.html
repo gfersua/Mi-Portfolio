@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTrack · MGFS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-proyecto.css">
+</head>
+<body>
+
+    <!-- GLOBAL NAVIGATION -->
+    <header>
+        <nav class="nav">
+            <a href="indexEnglish.html" class="logo">MGFS</a>
+            <ul class="nav-links">
+                <li><a href="indexEnglish.html#sobre-mi">About me</a></li>
+                <li><a href="indexEnglish.html#skills">Skills</a></li>
+                <li><a href="indexEnglish.html#proyectos">Projects</a></li>
+                <li><a href="indexEnglish.html#contacto">Contact</a></li>
+                <li><a href="autotrack.html" aria-label="Ver en español"><img src="img/bandera-esp.png" alt="Español" class="bandera"></a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============================================================
+             PROJECT HERO
+             ============================================================ -->
+        <section class="proyecto-hero">
+            <div class="proyecto-hero-grid"></div>
+            <div class="proyecto-hero-blob"></div>
+
+            <div class="proyecto-hero-content">
+
+                <a href="indexEnglish.html#proyectos" class="volver">Back to projects</a>
+
+                <div class="proyecto-estado">
+                    <span class="estado-dot"></span>
+                    In development
+                </div>
+
+                <h1>AutoTrack</h1>
+                <p>Web App · Freelancer tool</p>
+
+                <div class="tech-badges">
+                    <span class="badge">Java</span>
+                    <span class="badge">Hibernate</span>
+                    <span class="badge">JPA</span>
+                    <span class="badge">JPQL</span>
+                </div>
+
+                <div class="proyecto-hero-btns">
+                    <a href="#capturas" class="btn-primary">View screenshots</a>
+                    <a href="#repositorio" class="btn-outline">GitHub Repository</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INTERNAL NAVIGATION -->
+        <nav class="proyecto-nav" aria-label="Project sections">
+            <div class="proyecto-nav-inner">
+                <a href="#descripcion" class="active">Overview</a>
+                <a href="#aprendizaje">What I learned</a>
+                <a href="#capturas">Screenshots</a>
+                <a href="#futuro">Roadmap</a>
+                <a href="#repositorio">Repository</a>
+            </div>
+        </nav>
+
+
+        <!-- ============================================================
+             OVERVIEW
+             ============================================================ -->
+        <section id="descripcion">
+            <div class="proyecto-seccion">
+                <h2>About the project</h2>
+
+                <div class="descripcion-grid">
+
+                    <div class="descripcion-texto">
+                        <p>
+                            AutoTrack is a tool built for freelancers that solves a very specific problem: knowing how long it takes to get paid, how much you have earned this quarter, and what your average rate per client actually is.
+                        </p>
+                        <p>
+                            The design is built around three clear ideas: giving freelancers a clear picture of their earnings without manual calculations, making sure no invoice gets lost along the way, and helping them make data-driven decisions about who they work with.
+                        </p>
+                    </div>
+
+                    <div class="descripcion-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Type</span>
+                            <span class="meta-valor">Web application</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Year</span>
+                            <span class="meta-valor">2026</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Status</span>
+                            <span class="meta-valor">In development</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Main stack</span>
+                            <span class="meta-valor">Java · Hibernate · JPA · JPQL</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             WHAT I LEARNED
+             ============================================================ -->
+        <div class="proyecto-seccion-alt">
+            <section id="aprendizaje" class="proyecto-seccion">
+                <h2>What I learned</h2>
+
+                <ul class="aprendizaje-lista">
+                    <li>JPA entity modelling with 1:N relationships and mapping between Java conventions and MySQL</li>
+                    <li>Writing JPQL queries with named parameters, relationship navigation and aggregate functions such as AVG</li>
+                    <li>Separation of concerns in a layered architecture: model, repository, service and util</li>
+                    <li>Financial calculations using BigDecimal to guarantee precision in amounts, VAT and income tax withholding</li>
+                    <li>Database connection management via the Singleton pattern in HibernateUtil</li>
+                    <li>Protecting credentials with environment variables and .gitignore before publishing to GitHub</li>
+                </ul>
+
+            </section>
+        </div>
+
+
+        <!-- ============================================================
+             SCREENSHOTS
+             ============================================================ -->
+        <section id="capturas">
+            <div class="proyecto-seccion">
+                <h2>Screenshots</h2>
+
+                <div class="capturas-grid">
+
+                    <div class="captura-item">
+                        <img src="img-autotrack/index.png" alt="AutoTrack main view">
+                        <div class="captura-caption">Main view · AutoTrack</div>
+                    </div>
+
+                    <div class="captura-item">
+                        <img src="img-autotrack/funcionalidadd1.jpg" alt="Net/gross calculation and invoice status update">
+                        <div class="captura-caption">Net / gross calculation · Invoice status update</div>
+                    </div>
+
+                    <div class="captura-item">
+                        <img src="img-autotrack/funcionalidad2.jpg" alt="Working hours calculation">
+                        <div class="captura-caption">Working hours calculation</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             ROADMAP
+             ============================================================ -->
+        <div class="proyecto-seccion-alt">
+            <section id="futuro" class="proyecto-seccion">
+                <h2>Roadmap</h2>
+
+                <div class="futuro-grid">
+
+                    <div class="futuro-card">
+                        <h3>Migration to Spring Boot</h3>
+                        <p>Backend refactoring to Spring Boot with Spring Data JPA and a REST API documented with Swagger — currently in progress as part of my Spring Boot learning path.</p>
+                    </div>
+
+                    <div class="futuro-card">
+                        <h3>JUnit 5 testing</h3>
+                        <p>Unit test coverage for the calculation services: invoice payment delay, net and gross amounts, and quarterly totals.</p>
+                    </div>
+
+                    <div class="futuro-card">
+                        <h3>Frontend</h3>
+                        <p>Prototype designed in Figma. Pending implementation in HTML/CSS and subsequent integration with the REST API.</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ============================================================
+             REPOSITORY
+             ============================================================ -->
+        <section id="repositorio" class="repo-seccion">
+            <h2>Source code</h2>
+            <p>Repository available on GitHub</p>
+            <div class="repo-btns">
+                <a href="https://github.com/gfersua/autotrack.git" target="_blank" class="btn-primary">
+                    View on GitHub
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 · Gracia's Portfolio · Built with code and dedication</p>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+        const secciones = document.querySelectorAll('section[id], div[id]');
+        const navItems  = document.querySelectorAll('.proyecto-nav a');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navItems.forEach(a => a.classList.remove('active'));
+                    const active = document.querySelector(`.proyecto-nav a[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+
+        secciones.forEach(s => observer.observe(s));
+    </script>
+
+</body>
+</html>
